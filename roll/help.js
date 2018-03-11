@@ -24,7 +24,7 @@ function Help() {
 			"type": "carousel",
 			"columns": [
 				{
-					"title": "《123》",
+					"title": "《基本擲骰系統》",
 					"text": "【擲骰BOT】v1.40 指令包括1D100, 5B10 ,5U10 8 9",
 					"actions": [
 						{
@@ -51,7 +51,7 @@ function Help() {
 						{
 							"type": "message",
 							"label": "6版擲骰 技能80",
-							"text": "ccb 80 AA"
+							"text": "ccb 80 擒抱!"
 						},
 						{
 							"type": "message",
