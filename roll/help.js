@@ -53,8 +53,8 @@ function Help() {
 						},
 						{
 							"type": "message",
-							"label": "測試",
-							"text": "ccb 35 精密大錘"
+							"label": "夏日藍衣",
+							"text": "."
 						}
 						
 					]
