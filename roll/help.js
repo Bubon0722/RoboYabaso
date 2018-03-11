@@ -69,7 +69,84 @@ function Help() {
 						}
 						
 					]
+				},
+				{
+					"title": "《其他系統02》",
+					"text": "DX3雙重十字 nDXc+m n=骰數 c=暴擊值 m=其他修正",
+					"actions": [
+						{
+							"type": "message",
+							"label": "DX3 擲骰範例",
+							"text": "5DX8-1+8"
+						},
+						{
+							"type": "message",
+							"label": "DX3 擲骰範例",
+							"text": "8DX+1"
+						},
+						{
+							"type": "message",
+							"label": "DX3 擲骰範例",
+							"text": "2DX5-1"
+						}
+
+					]
+				},
+				{
+					"title": "《附加功能》",
+					"text": "排序及隨機功能,D66, D66s",
+					"actions": [
+						{
+							"type": "message",
+							"label": "排序功能範例",
+							"text": "交換禮物排序 A君 C君 F君 G君"
+						},
+						{
+							"type": "message",
+							"label": "隨機功能範例",
+							"text": "隨機收到聖誕禮物數 1 2 3 >4"
+						},
+						{
+							"type": "message",
+							"label": "D66s 骰出D66 小至大",
+							"text": "D66s 骰出D66 小至大"
+						}
+
+					]
+				},
+				{
+					"title": "《附加功能2》",
+					"text": "塔羅牌,運氣占卜,死亡FLAG. ",
+					"actions": [
+						{
+							"type": "message",
+							"label": "塔羅占卜",
+							"text": "單張塔羅/大十字塔羅/每日塔羅牌/時間tarot 單張,大十字,每日及時間必須放頭"
+						},
+						{
+							"type": "message",
+							"label": "死亡FLAG",
+							"text": "立Flag/死亡flag"
+						},
+						{
+							"type": "message",
+							"label": "回報問題",
+							"text": "請到 www.hktrpg.com 留言"
+						}
+
+					]
 				}
+			]
+		}
+	};
+	return rply;
+}
+
+
+
+module.exports = {
+	Help: Help
+};
 			]
 		}
 	};
