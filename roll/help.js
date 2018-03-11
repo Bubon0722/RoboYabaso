@@ -1,13 +1,11 @@
-var rollbase = require('./rollbase.js');
+ar rollbase = require('./rollbase.js');
 var funny = require('./funny.js');
 var rply = { type: 'text' }; //type是必需的,但可以更改
 
 function Help() {
 	rply = {
 		"type": "template",
-		"altText": "skill \
-\n test \
-\n【擲骰BOT】v1.40 \
+		"altText": "【擲骰BOT】v1.40 \
 \n 例如輸入2d6+1　攻撃！\
 \n 會輸出）2d6+1：攻撃  9[6+3]+1 = 10\
 \n 如上面一樣,在骰子數字後方隔空白位打字,可以進行發言。\
@@ -26,48 +24,68 @@ function Help() {
 			"type": "carousel",
 			"columns": [
 				{
-					"title": "偵探",
-					"text": "請不要隨意點選其他職業的技能",
+					"title": "《123》",
+					"text": "【擲骰BOT】v1.40 指令包括1D100, 5B10 ,5U10 8 9",
 					"actions": [
 						{
 							"type": "message",
-							"label": "偵探放大鏡",
-							"text": "ccb 20 偵探放大鏡"
+							"label": "1d100擲骰範例",
+							"text": "5 1d100 示範"
 						},
 						{
 							"type": "message",
-							"label": "尋寶地圖",
-							"text": "ccb 40 尋寶地圖"
+							"label": "5B10擲骰範例",
+							"text": "5B10 9 不加總的擲骰,計算其中有多少粒大於9"
+						},
+						{
+							"type": "message",
+							"label": "5U10 8 9擲骰範例",
+							"text": "5U10 8 9 每骰出一粒8會有一粒獎勵骰及計算有多少粒大於9"
 						}
 
 					]
 				}, {
-					"title": "工匠",
-					"text": "請不要隨意點選其他職業的技能",
+					"title": "《COC 6 7版 擲骰系統》",
+					"text": "指令包括 6版ccb, 7版cc, cc(n)1~2, cc6版創角, cc7版創角, coc7角色背景",
 					"actions": [
 						{
 							"type": "message",
-							"label": "細緻零件",
-							"text": "ccb 80 細緻零件"
+							"label": "6版擲骰 技能80",
+							"text": "ccb 80 AA"
 						},
 						{
 							"type": "message",
-							"label": "精密大錘",
-							"text": "ccb 35 精密大錘"
+							"label": "7版擲骰 技能80 -2懲罰",
+							"text": "ccn2 80 7版擲骰技能80 -2懲罰"
+						},
+						{
+							"type": "message",
+							"label": "cc7版創角 50歲",
+							"text": "cc7版創角 50"
 						}
 
 					]
 				},
 				{
-					"title": "織布師",
-					"text": "請不要隨意點選其他職業的技能",
+					"title": "《其他系統01》",
+					"text": "NC死靈年代記之永遠的後日談, WoD黑暗世界",
 					"actions": [
 						{
 							"type": "message",
-							"label": "夏威夷襯衫",
-							"text": "ccb 25 夏威夷襯衫"
+							"label": "1NC 擲骰範例",
+							"text": "2NC"
+						},
+						{
+							"type": "message",
+							"label": "NM 依戀擲骰範例",
+							"text": "nm"
+						},
+						{
+							"type": "message",
+							"label": "WOD擲骰範例",
+							"text": "5wd8 投擲5次D10 每有一粒大於8,得到一粒獎勵骰"
 						}
-						
+
 					]
 				},
 				{
@@ -136,17 +154,6 @@ function Help() {
 
 					]
 				}
-			]
-		}
-	};
-	return rply;
-}
-
-
-
-module.exports = {
-	Help: Help
-};
 			]
 		}
 	};
