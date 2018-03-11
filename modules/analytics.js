@@ -32,7 +32,7 @@ function parseInput(rplyToken, inputStr) {
 	if (trigger.match(/^ccb$|^cc$|^ccn[1-2]$|^cc[1-2]$/)!= null && mainMsg[1]<=1000 )
 	{		
 	//ccb指令開始於此
-	if (trigger == 'ccb'&& mainMsg[1]<=99) return exports.coc.coc6(mainMsg[1],mainMsg[2]);
+	if (trigger == '判定'&& mainMsg[1]<=99) return exports.coc.coc6(mainMsg[1],mainMsg[2]);
 	
 	//cc指令開始於此
 	if (trigger == 'cc'&& mainMsg[1]<=1000) return exports.coc.coc7(mainMsg[1],mainMsg[2]);
