@@ -33,4 +33,4 @@ module.exports = {
 	build7char: build7char,
 	build6char: build6char,
 	PcBG:PcBG
-};
+}; 
