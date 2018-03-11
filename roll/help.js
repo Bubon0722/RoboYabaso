@@ -24,18 +24,18 @@ function Help() {
 			"type": "carousel",
 			"columns": [
 				{
-					"title": "《基本擲骰》",
-					"text": "【擲骰BOT】v1.40 指令包括1D100, 5B10 ,5U10 8 9",
+					"title": "偵探",
+					"text": "請不要隨意點選其他職業的技能",
 					"actions": [
 						{
 							"type": "message",
-							"label": "1d100擲骰範例",
-							"text": "5 1d100 示範"
+							"label": "偵探放大鏡",
+							"text": "ccb 20 偵探放大鏡"
 						},
 						{
 							"type": "message",
-							"label": "5B10擲骰範例",
-							"text": "5B10 9 不加總的擲骰,計算其中有多少粒大於9"
+							"label": "尋寶地圖",
+							"text": "ccb 40 尋寶地圖"
 						},
 						{
 							"type": "message",
@@ -45,18 +45,18 @@ function Help() {
 
 					]
 				}, {
-					"title": "《COC 6 7版 擲骰系統》",
-					"text": "指令包括 6版ccb, 7版cc, cc(n)1~2, cc6版創角, cc7版創角, coc7角色背景",
+					"title": "工匠",
+					"text": "請不要隨意點選其他職業的技能",
 					"actions": [
 						{
 							"type": "message",
-							"label": "6版擲骰 技能80",
-							"text": "ccb 80 擒抱!"
+							"label": "細緻零件",
+							"text": "ccb 80 細緻零件"
 						},
 						{
 							"type": "message",
-							"label": "7版擲骰 技能80 -2懲罰",
-							"text": "ccn2 80 7版擲骰技能80 -2懲罰"
+							"label": "精密大錘",
+							"text": "ccb 35 精密大錘"
 						},
 						{
 							"type": "message",
@@ -67,13 +67,13 @@ function Help() {
 					]
 				},
 				{
-					"title": "《其他系統01》",
-					"text": "NC死靈年代記之永遠的後日談, WoD黑暗世界",
+					"title": "織布師",
+					"text": "請不要隨意點選其他職業的技能",
 					"actions": [
 						{
 							"type": "message",
-							"label": "1NC 擲骰範例",
-							"text": "2NC"
+							"label": "夏威夷襯衫",
+							"text": "ccb 25 夏威夷襯衫"
 						},
 						{
 							"type": "message",
